@@ -50,6 +50,7 @@ justify-content: center;
     transition: 0.4s;
 }
 
+
 .icone {
     width: 22px;
     height: 22px;
@@ -80,9 +81,6 @@ justify-content: center;
     margin-top: 10px;
 }
 
-.icone{
-
-}
 
 .umidade {
     color: #fff;
@@ -110,4 +108,12 @@ justify-content: center;
     margin-top: 15px;
     font-size: 14px;
     line-height: 1.5;
+}
+
+.erro {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
 }
