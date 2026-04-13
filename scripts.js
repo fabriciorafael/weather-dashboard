@@ -29,7 +29,9 @@ async function cliqueiNoBotao() {
   
 
 
-    let respostaServidor = await fetch(`http://localhost:3000/clima?cidade=${cidade}`)
+    let respostaServidor = await fetch(
+`https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=SUA_API_KEY&units=metric&lang=pt_br`
+)
     let dadosJson = await respostaServidor.json()
 
     console.log(dadosJson)
@@ -42,8 +44,6 @@ async function cliqueiNoBotao() {
     <button class="botao-ia" onclick="pedirSugestaoRoupa()">Sugestão de Roupa</button>
     <p class="resposta-ia">Resposta da IA </p>
 `
-
-
 
 }
 
